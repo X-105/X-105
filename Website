@@ -1,0 +1,38 @@
+# create_website.py
+
+# HTML-Inhalt definieren
+html_content = """
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einfaches Design</title>
+    <style>
+        body {
+            background-color: black;
+            color: orange;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alles über X-105</h1>
+</body>
+</html>
+"""
+
+# HTML-Inhalt in eine Datei schreiben
+try:
+    # Versuche, die Datei im aktuellen Arbeitsverzeichnis zu speichern und im UTF-8-Encoding zu schreiben
+    with open("index.html", "w", encoding="utf-8") as file:
+        file.write(html_content)
+    print("Die HTML-Datei wurde erfolgreich erstellt.")
+except Exception as e:
+    print(f"Fehler beim Erstellen der Datei: {e}")
