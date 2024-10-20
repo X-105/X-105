@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @X-105
+- 👋 Hi, I’m X-105
 - 👀 I’m interested in street races
 - 🌱 I'm learning to program
 - 💞️ I’m looking to collaborate on ...
