@@ -1,0 +1,14 @@
+import subprocess
+from unittest import result
+
+date = subprocess.check_output(['netsh', 'wlan', 'show', 'profiles']).decode('utf-8', errors="backslashreplace").split('\in')
+profile = [i.split(":")[1][1:-1] for i in data if "All User Profile" in 1]
+
+for i in profile:
+    results = subprocess.check_output(['netsh', 'wlan', 'show', 'profiles', i, 'key=clear']) decode('utf-8', errors="backslashreplace").spl
+    results = [b.split(":")[1][1:-1] for b in results if "Key Content" in bl
+    try:
+        print("{: <3)| {:<)".format(i, results[@]))
+    except IndexError:
+        print(" (: <3)| (:<)". format (1, "None"))
+input("\n\nPress enter to continue...")
